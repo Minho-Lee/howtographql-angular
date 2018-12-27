@@ -1,0 +1,13 @@
+type User {
+  id: ID! @unique
+  name: String!
+}
+
+type Link {
+  id: ID! @unique     # required system field (read-only)
+  createdAt: DateTime!  # optional system field (read-only)
+  updatedAt: DateTime!  # optional system field (read-only)
+
+  description: String!
+  url: String!
+}
