@@ -26,6 +26,7 @@ export class LinkListComponent implements OnInit {
     }).valueChanges.subscribe((response) => {
       console.log(response);
       this.allLinks = response.data.links;
+      // ^ Above throws an error saying 'links' doesn't exist on type '{}' when it actually does
       this.loading = response.loading;
     });
   }
