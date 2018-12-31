@@ -10,6 +10,9 @@ import { LinkItemComponent } from './link-item/link-item.component';
 import { LinkListComponent } from './link-list/link-list.component';
 import { CreateLinkComponent } from './create-link/create-link.component';
 import { HeaderComponent } from './header/header.component';
+import { LoginComponent } from './login/login.component';
+
+import { AuthService } from './services/auth.service';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,8 @@ import { HeaderComponent } from './header/header.component';
     LinkItemComponent,
     LinkListComponent,
     CreateLinkComponent,
-    HeaderComponent
+    HeaderComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +29,7 @@ import { HeaderComponent } from './header/header.component';
     GraphQLModule,
     FormsModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
