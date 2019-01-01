@@ -1,6 +1,12 @@
 type User {
   id: ID! @unique
   name: String!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  email: String! @unique
+  password: String!
+
+  links: [Link!]! @relation(name: "UsersLinks")
 }
 
 type Link {
@@ -10,4 +16,6 @@ type Link {
 
   description: String!
   url: String!
+
+  postedBy: User @relation(name: "UsersLinks")
 }

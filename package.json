@@ -27,6 +27,8 @@
     "core-js": "^2.5.4",
     "graphql": "^14.0.2",
     "graphql-tag": "^2.10.0",
+    "graphql-yoga": "^1.16.9",
+    "prisma-binding": "^2.2.12",
     "rxjs": "~6.3.3",
     "zone.js": "~0.8.26"
   },

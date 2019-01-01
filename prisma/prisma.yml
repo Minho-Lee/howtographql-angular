@@ -1,6 +1,8 @@
 endpoint: https://us1.prisma.sh/minho-lee-945561/hackernews-angular-apollo/dev
 datamodel: datamodel.prisma
 
+secret: my-secret-42
+
 generate:
   - generator: typescript-client
     output: ./generated/prisma-client/
